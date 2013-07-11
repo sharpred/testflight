@@ -1,5 +1,5 @@
 {
-	"binary" : "http://testflightapp.com/api/builds.format",
+	"binary" : "http://testflightapp.com/api/builds.json",
 	"postData" : { 
 		"api_token"	: "",
 		"team_token" : "",
