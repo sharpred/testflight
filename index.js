@@ -1,13 +1,18 @@
+#!/usr/bin/env node
+
 var FormData = require('form-data');
 var fs = require('fs');
 var tfConfig;
 var commander = require('commander');
 var verbose = false;
 var debug = false;
+var cwd = process.cwd();
+var args = process.argv;
 
-if(fs.existsSync('./testflight.json')){
-	console.log('Using configuration in testflight.json file');
-	tfConfig = require('./testflight');
+
+if(fs.existsSync(cwd + '/testflight.json')){
+	console.log('Loading configuration from testflight.json file');
+	tfConfig = require(cwd + '/testflight');
 } else {
 	console.log('testflight.json does not exist');
 	tfConfig = {};
@@ -25,7 +30,7 @@ commander.
 	option('-r  --replace', 'Should this upload replace existing builds' ).
 	option('-v  --verbose').
 	option('--debug').
-	parse(process.argv);
+	parse(args);
 
 // console.log(commander);
 
@@ -73,7 +78,7 @@ function processArgs() {
 
 	if(verbose) {
 		console.log('using configuration', tfConfig);
-		console.log('about to post to ', tfConfig.url);
+		console.log('about to post to', tfConfig.url);
 	}
 }
 
