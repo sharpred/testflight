@@ -1,0 +1,9 @@
+{
+	"url" : "http://testflightapp.com/api/builds.json",
+	"binary" : "/path/to/file.ipa",
+	"postData" : { 
+		"api_token"	: "",
+		"team_token" : "",
+		"notes" : ""
+	}
+}
