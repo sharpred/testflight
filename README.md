@@ -6,14 +6,17 @@ A simple node module for pushing builds IPA and APK files to TestFlight.
 	npm install -g testflight
 
 
-Usage
+## Usage
 
-# Edit testflight.json to include your keys and paths
+* Edit testflight.json to include your keys and paths
 
-	testflight # This will use testfight.json
+		$ testflight # This will use testfight.json
 
-# Pass in command line parameters
+* Pass in command line parameters
 
+	  
+	  $ testflight -b /path/to/file.ipa -a 'my-api-token' -t 'my-team-token' 
+	  
 	  Usage: testflight [options]
 
 	  Options:
@@ -32,4 +35,5 @@ Usage
 	    --debug                           
 		
 
+		
 
