@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "A node js wrapper for the Test Flight API",
   "main": "index.js",
+  "url" : "git://github.com/rtimothy/testflight.git",
   "bin": {
     "testflight": "index.js"
   },
