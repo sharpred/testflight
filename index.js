@@ -102,8 +102,6 @@ assertRequiredParams();
 
 
 
-process.exit(1);
-
 var form = new FormData();
 form.append('api_token', tfConfig.postData.api_token);
 form.append('team_token', tfConfig.postData.team_token);
@@ -122,7 +120,7 @@ form.submit('http://testflightapp.com/api/builds.json', function(err, res){
 		console.log(err);
 		console.log(res);
 	}else {
-		console.log('********************************');
+		console.log('************** success ******************');
 		console.log(res.statusCode);
 	}
 });
