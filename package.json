@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A node js wrapper for the Test Flight API",
   "main": "index.js",
-  "url" : "git://github.com/rtimothy/testflight.git",
+  "url": "git://github.com/rtimothy/testflight.git",
   "bin": {
     "testflight": "index.js"
   },
@@ -20,7 +20,11 @@
   "license": "BSD",
   "dependencies": {
     "form-data": "0.0.10",
-    "commander": "~1.2.0"
+    "commander": "~1.2.0",
+    "vows": "~0.7.0"
+  },
+  "scripts" : {
+    "test" : "vows tests/* --spec"
   },
   "preferGlobal": true
 }

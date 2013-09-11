@@ -14,9 +14,9 @@ A simple node module for pushing builds IPA and APK files to TestFlight.
 
 * Pass in command line parameters
 
-	  
-	  $ testflight -b /path/to/file.ipa -a 'my-api-token' -t 'my-team-token' 
-	  
+
+	  $ testflight -b /path/to/file.ipa -a 'my-api-token' -t 'my-team-token'
+
 	  Usage: testflight [options]
 
 	  Options:
@@ -31,9 +31,5 @@ A simple node module for pushing builds IPA and APK files to TestFlight.
 	    -l  --distribution-lists [lists]  The distribution lists to be notified
 	    -n  --notify                      Should notifications be sent to qualified TestFlight users
 	    -r  --replace                     Should this upload replace existing builds
-	    -v  --verbose                     
-	    --debug                           
-		
-
-		
-
+	    -v  --verbose
+	    --debug
