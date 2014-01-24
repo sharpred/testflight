@@ -107,6 +107,9 @@ form.append('api_token', tfConfig.postData.api_token);
 form.append('team_token', tfConfig.postData.team_token);
 form.append('file', fs.createReadStream(tfConfig.binary));
 form.append('notes', tfConfig.postData.notes);
+form.append('notify', tfConfig.postData.notify);
+form.append('distribution_lists', tfConfig.postData.distribution_lists);
+
 
 if(debug){
 	console.log('Form data is...');
